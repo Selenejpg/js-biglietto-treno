@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d9fffb;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 90vh;
+}
+
+main {
+    height: 90vh;
+}
+
+#prezzo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ridotto {
+    text-align: center;
+}
+
+#anziani {
+    text-align: center;
+}
+
+.treno {
+    width: 250px;
+}
+
+.treno1 {
+    width: 450px;
+    margin-top: 50px;
+}
+
+.contenitore {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contenitore1 {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.lineagialla {
+   text-align: center;
+}

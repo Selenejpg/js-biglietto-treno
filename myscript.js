@@ -12,17 +12,31 @@ console.log (distanza)
 
 //sconto del 20% per i minorenni
 
-if ( eta < 18 ) {
-   let minorenni = distanza - (distanza * .20);
-   var num = parseFloat(distanza).toFixed( 2 )
-   console.log (minorenni)
-}
+let minorenni = distanza - (distanza * .20);
+let prezzoMinori = parseFloat (minorenni).toFixed(2);
+console.log (prezzoMinori);
+
 
 //sconto del 40% per gli over 65
 
-if ( eta > 65 ) {
-    let anziani = distanza - (distanza * .40); 
-    var num = parseFloat(distanza).toFixed( 2 );
-    console.log (anziani);
 
-}
+let anziani = distanza - (distanza * .40); 
+let prezzoAnziani = parseFloat(anziani).toFixed(2);
+console.log (prezzoAnziani);
+
+
+if ( eta < 18 ) {
+    document.getElementById("ridotto").innerHTML = `Costo biglietto ridotto minorenni = ${prezzoMinori} €` ;
+ }else if ( eta > 65) {
+    document.getElementById("anziani").innerHTML = `Costo biglietto ridotto over 65 = ${prezzoAnziani} €` ;
+  }else{
+    document.getElementById("prezzo").innerHTML = `Costo biglietto = ${distanza} €` ;
+  }
+  
+
+ 
+
+
+
+
+
